@@ -109,11 +109,11 @@ enbuyuk = sayilar[0];
 enkucuk = sayilar[0];
 
 for (let i = 1; i < sayilar.length; i++) {
-    if (sayilar[i] > enBuyuk) {
-        enBuyuk = sayilar[i];
+    if (sayilar[i] > enbuyuk) {
+      enbuyuk = sayilar[i];
     }
-    if (sayilar[i] < enKucuk) {
-        enKucuk = sayilar[i];
+    if (sayilar[i] < enkucuk) {
+      enkucuk = sayilar[i];
     }
 }
 
@@ -138,7 +138,10 @@ besyuzdenkucuksayilar = sayilar.filter(sayı => sayı<500)
 
 // 3e çözümü
 
-siralisayilar = sayilar.sort((a,b)=>a-b)
+
+
+
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
@@ -153,15 +156,8 @@ sayilar.forEach(sayi => {
 });
 
 for (let key in obj) {
-  tekraredensayilar.push(`${key} sayısı ${obj[key]} tekrar edilmiştir`);
+  tekraredensayilar.push(`${key} sayısı ${obj[key]} kere tekrar edilmiştir`);
 }
-
-
-
-
-
-
-
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
